@@ -49,6 +49,25 @@ class NewsTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
+        let articleVM = self.articleListVM.articleAt(indexPath.row)
+        
+        articleVM.url
+            .subscribe(onNext: { [weak self] stringURL in
+                guard
+                    let self = self,
+                    let url = URL(string: stringURL)
+                else { return }
+                
+                let vc = WebViewController(url: url)
+                let navVC = UINavigationController(rootViewController: vc)
+                
+                self.present(navVC, animated: true)
+            })
+            .disposed(by: disposeBag)
+    }
+    
     private func populateNews() {
         let resource = Resource<ArticleResponse>(url: URL(string: "https://newsapi.org/v2/top-headlines?country=pl&apiKey=d5ec96503a404e3b9d0d483206cf901a")!)
         

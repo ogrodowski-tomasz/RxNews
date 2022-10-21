@@ -38,4 +38,5 @@ struct ArticleViewModel {
 extension ArticleViewModel {
     var title: Observable<String> { Observable<String>.just(article.title) }
     var description: Observable<String> { Observable<String>.just(article.description ?? "Non-Provided") }
+    var url: Observable<String> { Observable<String>.just(article.url ?? "") }
 }

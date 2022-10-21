@@ -19,6 +19,7 @@
 		1E872E7A2902C3D1001E4DBA /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E872E792902C3D1001E4DBA /* URLRequest+Extensions.swift */; };
 		1E872E7D2902C4F7001E4DBA /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E872E7C2902C4F7001E4DBA /* ArticleViewModel.swift */; };
 		1E872E802902C739001E4DBA /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E872E7F2902C739001E4DBA /* ArticleTableViewCell.swift */; };
+		1E872E822902D3AC001E4DBA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E872E812902D3AC001E4DBA /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1E872E792902C3D1001E4DBA /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		1E872E7C2902C4F7001E4DBA /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		1E872E7F2902C739001E4DBA /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		1E872E812902D3AC001E4DBA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				1E872E6E2902C223001E4DBA /* NewsTableViewController.swift */,
+				1E872E812902D3AC001E4DBA /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				1E872E7A2902C3D1001E4DBA /* URLRequest+Extensions.swift in Sources */,
 				1E872E802902C739001E4DBA /* ArticleTableViewCell.swift in Sources */,
 				1E872E6F2902C223001E4DBA /* NewsTableViewController.swift in Sources */,
+				1E872E822902D3AC001E4DBA /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
