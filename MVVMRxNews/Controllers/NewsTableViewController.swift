@@ -32,7 +32,7 @@ class NewsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell", for: indexPath) as? ArticleTableViewCell else {
-            fatalError("ArticleTableViewCell not found.......... :(")
+            fatalError("ArticleTableViewCell not found...")
         }
         let articleVM = self.articleListVM.articleAt(indexPath.row)
         
